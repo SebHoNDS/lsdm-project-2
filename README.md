@@ -12,6 +12,8 @@ The executable JAR and run scripts can be found under lsdmproject/executables/ i
 In the following two sections there are hints on the options available with the compiled JAR file.
 The first parameter of the JAR file is the name of the task, either `COUNT` or `FILTER`.
 
+There are several task-specific options that are explained in the sections below.
+
 ### Counting 1's (DGIM method)
 
 File: DGIMCount.bat
