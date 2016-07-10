@@ -3,7 +3,7 @@
 ## The Sourcecode
 All the sources can be found under [https://github.com/SebHoNDS/lsdm-project-2/tree/master/lsdmproject/src/de/l3s/lsdmproject](lsdmproject/src/de/l3s/lsdmproject/) in this repository.
 The only required library can be found under [https://github.com/SebHoNDS/lsdm-project-2/tree/master/lsdmproject/libs](lsdmproject/libs/) in this repository. It is automatically linked with the .classpath file.
-The executable JAR and run scripts can be found under [https://github.com/SebHoNDS/lsdm-project-2/tree/master/lsdmproject/executables](lsdmproject/executables/) in this repository.
+The executable JAR and run scripts can be found under [lsdmproject/executables/](https://github.com/SebHoNDS/lsdm-project-2/tree/master/lsdmproject/executables) in this repository.
 
 **The project requires at least Java 7 to run!**
 
