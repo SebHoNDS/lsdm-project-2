@@ -62,7 +62,7 @@ A Bloom Filter requires a set of hash functions to run. There are two hash-funct
 
 3. *Count false positives:* true/false - Whether to check the filtered Tweets against the original list of hashtags. The number of false positive Results will be printed. **This option may slow down the computation!**
 
-4. *Aggregation mode:* `DISJUNCTION` or `CONJUNCTION` specifies whether filtered Tweets should contain at least one Hashtag has to be matched by the filter (Disjunction) or if all of the hashtags mentioned in a Tweet have to be matched by the filter (Conjunction).
+4. *Aggregation mode:* `DISJUNCTION` or `CONJUNCTION` specifies whether filtered Tweets should contain at least one Hashtag matched by the filter (Disjunction) or if all of the hashtags mentioned in a Tweet have to be matched by the filter (Conjunction).
 
 5. *Source file:* Specify an absolute or relative path to a source file. The format should be JSON encoded Twitter Tweets, one per line.
 
@@ -73,9 +73,9 @@ A Bloom Filter requires a set of hash functions to run. There are two hash-funct
 Arguments example 1:
 `FILTER 1000 true true DISJUNCTION "E:/lsdm16/ebola.json" WHO stopebola`
 
-Trains a Bloom Filter with Hashtags `#WHO` and `#stopebola` (without considering case) and evaluates Tweets from the file `E:/lsdm16/ebola.json`. The Tweets are returned iff either #WHO or #stopebola are mentioned in them. For evaluating the performance, also the number of false negatives (in terms of returned Tweets) is printed and a list of Hashtags, that were responsible for false negative results by hash collsions, is provided.
+Trains a Bloom Filter with Hashtags `#WHO` and `#stopebola` (without considering case) and evaluates Tweets from the file `E:/lsdm16/ebola.json`. Bucket size is 1000. The Tweets are returned iff either #WHO or #stopebola are mentioned in them. For evaluating the performance, also the number of false negatives (in terms of returned Tweets) is printed and a list of Hashtags, that were responsible for false negative results by hash collsions, is provided.
 
 Arguments example 2:
 `FILTER 100000 false true CONJUNCTION ebola.json government ebola SierraLeone`
 
-Trains a Bloom Filter with Hashtags `#government`, `#ebola` and `#SierraLeone` (**considering case**) and evaluates Tweets from the file `ebola.json`. The Tweets are returned iff all hashtags of a tweet are contained in the training list. For evaluating the performance, also the number of false negatives (in terms of returned Tweets) is printed and a list of Hashtags, that were responsible for false negative results by hash collsions, is provided.
+Trains a Bloom Filter with Hashtags `#government`, `#ebola` and `#SierraLeone` (**considering case**) and evaluates Tweets from the file `ebola.json`. Bucket size is 100000. The Tweets are returned iff all hashtags of a tweet are contained in the training list. For evaluating the performance, also the number of false negatives (in terms of returned Tweets) is printed and a list of Hashtags, that were responsible for false negative results by hash collsions, is provided.
