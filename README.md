@@ -14,11 +14,14 @@ The first parameter of the JAR file is the name of the task, either `COUNT` or `
 
 There are several task-specific options after the task command. These are explained in the sections below.
 
-### Counting 1's (DGIM method)
+The genral pattern of a command-line call is the following:
+`java -jar LSDMProject.jar {TASKNAME} {OPTIONS}`
 
-File: DGIMCount.bat
+### Counting 1's (DGIM method) - task name: `COUNT`
 
-Options:
+See File: `DGIMCount.bat`
+
+#### Options
 
 1. *Case insensitive:* true/false - Whether to count occurrences of hashtags ignoring their case.
 
@@ -30,6 +33,7 @@ Options:
 
 5. *Hashtags and Timespans:* A space separated list of Hashtags **ànd** timespans **in Seconds**. For Hashtags including spaces, you have to double quote them on windows machines, i.e. `"flu shot"` instead of `flu shot`. You are allowed to specify as much Hashtags as you want to. Also encodes the timespans in the past to count within. These timespans are noted in seconds. I.e. `WHO ebola 172800 604800` counts occurrences of #WHO and #ebola separately within the last two and seven days accordingly. The result will be four distinct counts.
 
+#### Example arguments
 
 Arguments example 1:
 `COUNT true everything true "ebola.json" WHO ebola 172800 604800`
@@ -37,11 +41,11 @@ Arguments example 1:
 Arguments example 2:
 `COUNT true everything true "C:/Users/Max Mustermann/ebola.json" flushot 86400`
 
-### Filtering (Bloom Filters)
+### Filtering (Bloom Filters) - task name `FILTER`
 
-File: BloomFilter.bat
+See File: `BloomFilter.bat`
 
-Options:
+#### Options
 
 1. *Bucket size (n):* The size of the Array used to store the training results and match the input against.
 
@@ -54,6 +58,8 @@ Options:
 5. *Source file:* Specify an absolute or relative path to a source file. The format should be JSON encoded Twitter Tweets, one per line.
 
 6. *Training Hashtags:* A space separated list of hashtags to use for training of the Bloom Filter. Hashtags that include spaces have to be double quoted on windows machines.
+
+#### Example arguments
 
 Arguments example 1:
 `FILTER 1000 true true DISJUNCTION "E:/tagging-ide/lsdm16/ebola.json" WHO stopebola`
