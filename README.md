@@ -14,7 +14,7 @@ The first parameter of the JAR file is the name of the task, either `COUNT` or `
 
 There are several task-specific options after the task command. These are explained in the sections below.
 
-The genral pattern of a command-line call is the following:
+The general pattern of a command-line call is the following:
 `java -jar LSDMProject.jar {TASKNAME} {OPTIONS}`
 
 ## Counting 1's (DGIM method) - task name: `COUNT`
