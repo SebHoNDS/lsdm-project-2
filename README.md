@@ -17,7 +17,7 @@ There are several task-specific options after the task command. These are explai
 The genral pattern of a command-line call is the following:
 `java -jar LSDMProject.jar {TASKNAME} {OPTIONS}`
 
-### Counting 1's (DGIM method) - task name: `COUNT`
+## Counting 1's (DGIM method) - task name: `COUNT`
 
 See File: `DGIMCount.bat`
 
@@ -41,7 +41,7 @@ Arguments example 1:
 Arguments example 2:
 `COUNT true everything true "C:/Users/Max Mustermann/ebola.json" flushot 86400`
 
-### Filtering (Bloom Filters) - task name `FILTER`
+## Filtering (Bloom Filters) - task name `FILTER`
 
 See File: `BloomFilter.bat`
 
