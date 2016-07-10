@@ -39,7 +39,7 @@ Arguments example 1:
 `COUNT true everything true "ebola.json" WHO ebola 172800 604800`
 
 Arguments example 2:
-`COUNT true everything true "C:/Users/Max Mustermann/ebola.json" flushot 86400`
+`COUNT true 86400 true "C:/Users/Max Mustermann/ebola.json" flushot 86400`
 
 ## Filtering (Bloom Filters) - task name `FILTER`
 
@@ -62,7 +62,7 @@ See File: `BloomFilter.bat`
 #### Example arguments
 
 Arguments example 1:
-`FILTER 1000 true true DISJUNCTION "E:/tagging-ide/lsdm16/ebola.json" WHO stopebola`
+`FILTER 1000 true true DISJUNCTION "E:/lsdm16/ebola.json" WHO stopebola`
 
 Arguments example 2:
 `FILTER 100000 false true CONJUNCTION ebola.json government ebola SierraLeone`
