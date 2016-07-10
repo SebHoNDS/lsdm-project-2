@@ -1,6 +1,6 @@
 @echo off
 
-java -jar LSDMProject.jar FILTER 1000 true true DISJUNCTION "E:/tagging-ide/lsdm16/ebola.json" WHO stopebola
+java -jar LSDMProject.jar FILTER 1000 true true DISJUNCTION "ebola.json" WHO stopebola
 
 REM ==DESCRIPTION==
 REM FILTER:			Execute a Bloom Filter task.
