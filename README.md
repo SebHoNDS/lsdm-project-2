@@ -1,9 +1,9 @@
 
 # TLSDM 2016 Project 2 (by Sebastian Holzki)
 ## The Sourcecode
-All the sources can be found under lsdmproject/src/de/l3s/lsdmproject/ in this repository.
-The only required library can be found under lsdmproject/libs/ in this repository. It is automatically linked with the .classpath file.
-The executable JAR and run scripts can be found under lsdmproject/executables/ in this repository.
+All the sources can be found under [https://github.com/SebHoNDS/lsdm-project-2/tree/master/lsdmproject/src/de/l3s/lsdmproject](lsdmproject/src/de/l3s/lsdmproject/) in this repository.
+The only required library can be found under [https://github.com/SebHoNDS/lsdm-project-2/tree/master/lsdmproject/libs](lsdmproject/libs/) in this repository. It is automatically linked with the .classpath file.
+The executable JAR and run scripts can be found under [https://github.com/SebHoNDS/lsdm-project-2/tree/master/lsdmproject/executables](lsdmproject/executables/) in this repository.
 
 **The project requires at least Java 7 to run!**
 
