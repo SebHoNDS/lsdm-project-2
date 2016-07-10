@@ -26,11 +26,12 @@ Options:
 
 4. *Source file:* Specify an absolute or relative path to a source file. The format should be JSON encoded Twitter Tweets, one per line.
 
-5.* Hashtags and Timespans:* A space separated list of Hashtags **ànd** timespans **in Seconds**. For Hashtags including spaces, you have to double quote them on windows machines, i.e. `"flu shot"` instead of `flu shot`. You are allowed to specify as much Hashtags as you want to. Also encodes the timespans in the past to count within. These timespans are noted in seconds. I.e. `WHO ebola 172800 604800` counts occurrences of #WHO and #ebola separately within the last two and seven days accordingly. The result will be four distinct counts.
+5. *Hashtags and Timespans:* A space separated list of Hashtags **ànd** timespans **in Seconds**. For Hashtags including spaces, you have to double quote them on windows machines, i.e. `"flu shot"` instead of `flu shot`. You are allowed to specify as much Hashtags as you want to. Also encodes the timespans in the past to count within. These timespans are noted in seconds. I.e. `WHO ebola 172800 604800` counts occurrences of #WHO and #ebola separately within the last two and seven days accordingly. The result will be four distinct counts.
 
 
 Arguments example 1:
 `COUNT true everything true "ebola.json" WHO ebola 172800 604800`
+
 Arguments example 2:
 `COUNT true everything true "C:/Users/Max Mustermann/ebola.json" flushot 86400`
 
@@ -51,3 +52,10 @@ Options:
 5. *Source file:* Specify an absolute or relative path to a source file. The format should be JSON encoded Twitter Tweets, one per line.
 
 6. *Training Hashtags:* A space separated list of hashtags to use for training of the Bloom Filter. Hashtags that include spaces have to be double quoted on windows machines.
+
+Arguments example 1:
+`FILTER 1000 true true DISJUNCTION "E:/tagging-ide/lsdm16/ebola.json" WHO stopebola`
+
+Arguments example 2:
+`FILTER 100000 false true CONJUNCTION ebola.json government ebola SierraLeone`
+
